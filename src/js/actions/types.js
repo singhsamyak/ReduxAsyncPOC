@@ -1,0 +1,7 @@
+export const FETCH_DATA = 'FETCH_DATA';
+export const FETCH_FAILURE = 'FETCH_FAILURE';
+export const FETCH_SUCCESS = 'FETCH_SUCCESS';
+export const FETCHING_DATA = 'FETCHING_DATA';
+export const RESET_SEARCH = 'RESET_SEARCH';
+export const SUBMIT_SEARCH = 'SUBMIT_SEARCH';
+export const UPDATE_SEARCH = 'UPDATE_SEARCH';
