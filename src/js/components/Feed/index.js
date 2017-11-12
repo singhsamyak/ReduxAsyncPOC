@@ -6,7 +6,7 @@ import NoResults from './lib/NoResults';
 
 const Feed = ({ subRedditTitle, posts, oops }) => {
   const SearchResults = posts.length > 0 ?
-    <Posts subRedditTitle={subRedditTitle} posts={posts}/> :
+    <Posts posts={posts} subRedditTitle={subRedditTitle} /> :
     <NoResults subRedditTitle={subRedditTitle}/>;
 
   const content = oops ? <Oops query={subRedditTitle}/> : SearchResults;

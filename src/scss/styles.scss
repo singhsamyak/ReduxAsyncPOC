@@ -14,17 +14,17 @@ body {
 }
 
 .home {
-  width: 500px;
   margin: 0 auto;
   padding-top: 40vh;
-  transition: 1.5s all ease;
   transition-delay: 3s;
   -webkit-transition-delay: 3s;
+  transition: 1.5s all ease;
+  width: 500px;
 }
 
 .home.searched {
-  transition: 0.5s all ease;
   padding-top: 20px;
+  transition: 0.5s all ease;
 }
 
 .feed {
@@ -40,23 +40,23 @@ body {
 }
 
 .post {
+  border-radius: 3px;
+  border: 1px solid $light-grey;
+  box-shadow: 1px 1px 2px 0px $light-grey;
   display: flex;
   flex-direction: row;
-  list-style-type: none;
-  border: 1px solid $light-grey;
-  box-shadow: 1px 1px 5px 0px $light-grey;
   height: 100px;
-  padding: 10px;
+  list-style-type: none;
   margin-bottom: 10px;
-  border-radius: 3px;
+  padding: 10px;
 
   & .post-image {
-    background-size: cover;
-    background-repeat: no-repeat;
     background-position: 50% 50%;
-    width: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
     border: 0;
     outline: 0;
+    width: 100px;
   }
 
   & .post-content {
@@ -66,9 +66,9 @@ body {
     position: relative;
 
     & .post-title {
-      text-decoration: none;
-      font-size: 12pt;
       color: $blue;
+      font-size: 12pt;
+      text-decoration: none;
     }
 
     & .post-author {
@@ -76,21 +76,21 @@ body {
     }
 
     & .post-meta {
-      position: absolute;
       bottom: 0;
+      position: absolute;
     }
   }
 }
 
 .inputField {
   border: 0;
-  border-bottom: 1px solid #dedede;
+  border-bottom: 1px solid $dark-grey;
   color: $blue;
-  width: 100%;
-  padding-top: 10px;
-  padding-bottom: 8px;
   font-size: 12pt;
   margin-bottom: 10px;
+  padding-bottom: 8px;
+  padding-top: 10px;
+  width: 100%;
 
   &.hasError {
     border-bottom: 2px solid #e74c3c;
@@ -98,36 +98,36 @@ body {
 }
 
 .inputField:focus {
-  outline: 0;
   border-bottom: 2px solid $blue;
+  outline: 0;
 }
 
 
 // Throbber design by Tobias Ahlin - http://tobiasahlin.com/spinkit/
 .throbber {
   margin: 50px auto 0;
-  width: 100px;
   text-align: center;
+  width: 100px;
 
   & .ball {
-    width: 15px;
-    height: 15px;
-    margin-right: 5px;
+    animation: throbber-bounce  1s infinite ease-in-out both;
+    -webkit-animation: throbber-bounce  1s infinite ease-in-out both;
     background-color: $blue;
     border-radius: 100%;
     display: inline-block;
-    -webkit-animation: throbber-bounce  1s infinite ease-in-out both;
-    animation: throbber-bounce  1s infinite ease-in-out both;
+    height: 15px;
+    margin-right: 5px;
+    width: 15px;
   }
 
   & .ball1 {
-    -webkit-animation-delay: -0.32s;
     animation-delay: -0.32s;
+    -webkit-animation-delay: -0.32s;
   }
 
   & .ball2 {
-    -webkit-animation-delay: -0.16s;
     animation-delay: -0.16s;
+    -webkit-animation-delay: -0.16s;
   }
 }
 
@@ -138,10 +138,10 @@ body {
 
 @keyframes throbber-bounce {
   0%, 80%, 100% {
-    -webkit-transform: scale(0);
     transform: scale(0);
+    -webkit-transform: scale(0);
   } 40% {
-    -webkit-transform: scale(1.0);
     transform: scale(1.0);
+    -webkit-transform: scale(1.0);
   }
 }

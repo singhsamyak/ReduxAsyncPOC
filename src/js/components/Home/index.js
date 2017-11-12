@@ -30,9 +30,7 @@ const Home = ({
 
   return (
     <div className={className}>
-      <Search
-        onSubmit={onSearchSubmit}
-        inputFieldProps={searchFieldProps} />
+      <Search inputFieldProps={searchFieldProps} onSubmit={onSearchSubmit}/>
       { FeedDisplay }
     </div>
   );
